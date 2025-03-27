@@ -1,0 +1,191 @@
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.custom-table th {
+  background-color: #0072ff;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.custom-table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Định dạng nút */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.btn-success {
+  background-color: #198754;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.custom-table thead {
+  background-color: rgba(33, 148, 243, 1);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 1);
+  border-radius: 10px;
+}
+
+.custom-table tbody {
+  color: black;
+  border: 2px solid rgba(255, 255, 255, 1);
+
+}
+
+.custom-table tr {
+  border: 2px solid rgba(255, 255, 255, 1);
+}
+
+.box {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  height: auto;
+  width: 98%;
+  margin: 1%;
+  gap: 2%;
+}
+
+.menu-information {
+  width: 20%;
+}
+
+
+.title-box {
+  width: 100%;
+  height: 85px;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(37, 193, 150, 1);
+  border-radius: 30px 30px 0 0;
+}
+
+.image-user {
+  align-items: center;
+  align-self: center;
+  width: 20%;
+}
+
+.image-user img {
+  width: 64px;
+  height: 64px;
+}
+
+.name-user {
+  width: 70%;
+  align-items: center;
+  align-self: center;
+}
+
+.name-user a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.list-menu {
+  border-radius: 0 0 30px 30px;
+  background-color: rgba(245, 247, 250, 1);
+  min-height: 800px;
+}
+
+.list-menu ul {
+  padding-top: 30px;
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.list-menu li {
+  width: 85%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 0 30px 30px 0;
+}
+
+.list-menu li a {
+  font-size: 20px;
+  text-decoration: none;
+  text-align: left;
+  /* Căn trái */
+  display: block;
+  width: 100%;
+  padding-left: 50px;
+  /* Tạo khoảng cách với mép trái */
+  color: black;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.list-menu li i {
+  color: rgba(37, 193, 150, 1);
+}
+
+.list-menu li:hover i {
+  color: rgb(255, 255, 255);
+}
+
+.list-menu li:hover {
+  background-color: rgba(37, 193, 150, 1);
+  /* Đổi màu nền */
+}
+
+.list-menu li:hover a {
+  color: white;
+  /* Đổi màu chữ */
+}
+
+
+.display-box {
+  width: 78%;
+}
+
+.title-display-box {
+  width: 100%;
+  height: 85px;
+  background-color: rgba(37, 193, 150, 1);
+  border-radius: 30px 30px 0 0;
+  display: flex;
+  /* Sử dụng flexbox */
+  align-items: center;
+  /* Căn giữa theo chiều dọc */
+  justify-content: flex-start;
+  /* Căn giữa theo chiều ngang (nếu cần) */
+}
+
+.title-display-box a {
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 30px;
+}
+
+.display {
+  min-height: 800px;
+  border-radius: 0 0 30px 30px;
+  background-color: rgba(245, 247, 250, 1);
+}

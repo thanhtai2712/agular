@@ -1,0 +1,291 @@
+.search-container {
+    margin: 20px auto;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background: white;
+    border: 2px solid #25C196;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+/* Ô tìm kiếm */
+.search-box {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    background: #F5F7FA;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: 1px solid #25C196;
+    margin-right: 10px;
+}
+.filter-box {
+   display: flex;
+}
+.search-box i {
+    color: #25C196;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.search-box input {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 18px;
+    flex-grow: 1;
+    color: #25C196;
+}
+.search-box input::placeholder {
+    color: rgba(37, 193, 150, 0.6);
+}
+
+/* Nút bộ lọc */
+.filter-btn {
+    width: auto;
+    background: white;
+    border: 1px solid #25C196;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    color: #25C196;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+.filter-btn i {
+    font-size: 16px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    transition: opacity 0.3s ease-in-out, transform 0.2s ease-in-out;
+    opacity: 0;
+    transform: translateY(-10px);
+    z-index: 1000;
+}
+
+/* Container của dropdown */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px #25C196;
+    padding: 15px;
+    transition: opacity 0.3s ease-in-out, transform 0.2s ease-in-out;
+    opacity: 0;
+    transform: translateY(-10px);
+    z-index: 1000;
+    border: 2px solid #25C196;
+}
+
+/* Hiển thị dropdown */
+.dropdown-menu.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Form trong dropdown */
+.dropdown-menu form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Nhãn */
+.dropdown-menu label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #25C196;
+}
+
+/* Các input và select */
+.dropdown-menu select,
+.dropdown-menu input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #25C196;
+    border-radius: 25px;
+    font-size: 16px;
+    background: #F5F7FA;
+    color: #25C196;
+    outline: none;
+}
+
+/* Hiệu ứng khi focus vào input */
+.dropdown-menu select:focus,
+.dropdown-menu input:focus {
+    border-color: #25C196;
+    box-shadow: 0px 0px 5px rgba(37, 193, 150, 0.5);
+}
+
+/* Nút áp dụng bộ lọc */
+.dropdown-menu .apply-filter {
+    background: #25C196;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+}
+
+/* Hiệu ứng hover cho nút */
+.dropdown-menu .apply-filter:hover {
+    background: white;
+    color: #25C196;
+    border: 1px solid #25C196;
+}
+
+/* Căn chỉnh các checkbox */
+.dropdown-menu .filter-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dropdown-menu .filter-checkbox input {
+    width: auto;
+    cursor: pointer;
+}
+/* Định dạng dropdown */
+.dropdown {
+    position: relative;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    min-width: 180px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px #25C196;
+    padding: 10px;
+    z-index: 1000;
+    border: 2px solid #25C196;
+}
+
+/* Hiển thị khi có class "show" */
+.dropdown-menu.show {
+    display: block;
+    border-radius: 10px;
+}
+
+/* Căn chỉnh danh sách tùy chọn */
+.dropdown-menu a {
+    display: block;
+    padding: 8px 15px;
+    color: #25C196;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.2s ease-in-out;
+}
+
+/* Hover hiệu ứng */
+.dropdown-menu a:hover {
+    background: #25C196;
+    color: white;
+}
+
+/* Danh sách phòng trọ */
+.room-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+.room-list {
+    width: 75%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.room-card {
+    display: flex;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #25C196;
+}
+
+.room-image img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.room-info {
+    padding: 10px;
+    flex: 1;
+}
+
+.room-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.room-location{
+    font-size: 14px;
+    color: #ff0000;
+}
+.room-size{
+    font-size: 14px;
+    color: #001eff;
+}
+.room-price {
+    font-size: 14px;
+    color: #ff0000;
+}
+
+.btn-view {
+    display: inline-block;
+    padding: 8px 12px;
+    background: #25C196;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Phân trang */
+
+.pagination-container{
+    width: auto;
+    margin: 20px auto;
+    text-align: center;
+}
+.page, .prev, .next {
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid #25C196;
+    color: #25C196;
+    border-radius: 5px;
+}
+
+.active {
+    background: #25C196;
+    color: white;
+}
